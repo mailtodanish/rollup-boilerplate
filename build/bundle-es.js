@@ -1,7 +1,12 @@
-var foo = "Rollup";
+(function() {
+    'use strict';
 
-module.exports = function() {
-    // dynamic loading
-    console.error(foo);
+    var foo = "Rollup";
 
-};
+    module.exports = function() {
+        // dynamic loading
+        console.error(foo);
+
+    };
+
+})();

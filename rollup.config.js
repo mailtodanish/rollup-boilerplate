@@ -1,4 +1,5 @@
-import css from 'rollup-plugin-css-only'
+import css from 'rollup-plugin-css-only';
+
 export default {
     input: "src/main.js",
     output: [{
@@ -7,7 +8,7 @@ export default {
         inlineDynamicImports: true
     }, {
         file: "build/bundle-es.js",
-        format: 'es',
+        format: 'iife',
         inlineDynamicImports: true
     }],
     plugins: [css({ output: 'bundle.css' })]
