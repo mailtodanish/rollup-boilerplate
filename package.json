@@ -1,0 +1,20 @@
+{
+    "name": "bundler",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "rollup src/main.js -o build/bundle.js -f cjs",
+        "test": "rollup src/main.js -d dist -f cjs",
+        "start": "rollup --config"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "rollup": "^2.79.0"
+    },
+    "dependencies": {
+        "rollup-plugin-css-only": "^3.1.0"
+    }
+}
